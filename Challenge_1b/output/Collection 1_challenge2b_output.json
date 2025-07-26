@@ -1,0 +1,97 @@
+{
+  "metadata": {
+    "input_documents": [
+      "South of France - Cities.pdf",
+      "South of France - Cuisine.pdf",
+      "South of France - History.pdf",
+      "South of France - Restaurants and Hotels.pdf",
+      "South of France - Things to Do.pdf",
+      "South of France - Tips and Tricks.pdf",
+      "South of France - Traditions and Culture.pdf"
+    ],
+    "persona": "{\"role\": \"Travel Planner\"}",
+    "job_to_be_done": "{\"task\": \"Plan a trip of 4 days for a group of 10 college friends.\"}",
+    "timestamp": "2025-07-26T13:27:29.990419+00:00"
+  },
+  "extracted_sections": [
+    {
+      "document": "South of France - Cities.pdf",
+      "page_number": 13,
+      "section_title": "Auto-Extracted Insight",
+      "importance_rank": 1
+    },
+    {
+      "document": "South of France - Cuisine.pdf",
+      "page_number": 1,
+      "section_title": "Auto-Extracted Insight",
+      "importance_rank": 1
+    },
+    {
+      "document": "South of France - History.pdf",
+      "page_number": 6,
+      "section_title": "Auto-Extracted Insight",
+      "importance_rank": 1
+    },
+    {
+      "document": "South of France - Restaurants and Hotels.pdf",
+      "page_number": 1,
+      "section_title": "Auto-Extracted Insight",
+      "importance_rank": 1
+    },
+    {
+      "document": "South of France - Things to Do.pdf",
+      "page_number": 9,
+      "section_title": "Auto-Extracted Insight",
+      "importance_rank": 1
+    },
+    {
+      "document": "South of France - Tips and Tricks.pdf",
+      "page_number": 1,
+      "section_title": "Auto-Extracted Insight",
+      "importance_rank": 1
+    },
+    {
+      "document": "South of France - Traditions and Culture.pdf",
+      "page_number": 1,
+      "section_title": "Auto-Extracted Insight",
+      "importance_rank": 1
+    }
+  ],
+  "subsection_analysis": [
+    {
+      "document": "South of France - Cities.pdf",
+      "refined_text": "Carcassonne: A Medieval Fortress \nHistory \nCarcassonne is a fortified city in the Languedoc region, known for its well-preserved medieval \narchitecture. The city's history dates back to the Roman period, but it is best known for its \nrole in the medieval period as a stronghold during the Albigensian Crusade. Carcassonne's \ndouble-walled fortifications and 52 towers make it one of the most impressive examples of \nmedieval architecture in Europe. \nKey Attractions \n\u2022 \nCit\u00e9 de Carcassonne: This medieval fortress is a UNESCO World Heritage site and one \nof the most impressive examples of medieval architecture in Europe. It features double \nwalls, 52 towers, and a castle. \n\u2022 \nBasilica of Saints Nazarius and Celsus: This Gothic-Romanesque basilica, located \nwithin the fortress, dates back to the 11th century. It is known for its beautiful stained \nglass windows. \n\u2022 \nCh\u00e2teau Comtal: This castle, located within the Cit\u00e9, o\ufb00ers guided tours that provide \ninsight into the history and architecture",
+      "page_number": 13
+    },
+    {
+      "document": "South of France - Cuisine.pdf",
+      "refined_text": "A Culinary Journey Through the South of France \nIntroduction \nThe South of France, known for its stunning landscapes and charming villages, is also a \nparadise for food lovers. The region's cuisine is a delightful blend of Mediterranean flavors, \nfresh ingredients, and traditional recipes passed down through generations. This guide will \ntake you through the di\ufb00erent types of food, famous dishes, must-visit restaurants, renowned \nwine regions, and the types of wines they produce to help you plan an unforgettable culinary \nadventure.",
+      "page_number": 1
+    },
+    {
+      "document": "South of France - History.pdf",
+      "refined_text": "Carcassonne: A Medieval Fortress \nCarcassonne is a fortified city in the Languedoc region, known for its well-preserved medieval \narchitecture. The city's history dates back to the Roman period, but it is best known for its \nrole in the medieval period as a stronghold during the Albigensian Crusade. \nKey Historical Sites in Carcassonne \n\u2022 \nCit\u00e9 de Carcassonne: This medieval fortress is a UNESCO World Heritage site and one \nof the most impressive examples of medieval architecture in Europe. It features double \nwalls, 52 towers, and a castle. \n\u2022 \nBasilica of Saints Nazarius and Celsus: This Gothic-Romanesque basilica, located \nwithin the fortress, dates back to the 11th century. It is known for its beautiful stained \nglass windows. \n\u2022 \nCh\u00e2teau Comtal: This castle, located within the Cit\u00e9, o\ufb00ers guided tours that provide \ninsight into the history and architecture of Carcassonne. \n\u2022 \nPont Vieux: This 14th-century bridge connects the medieval Cit\u00e9 with the lower town. \nIt o\ufb00ers stunning vie",
+      "page_number": 6
+    },
+    {
+      "document": "South of France - Restaurants and Hotels.pdf",
+      "refined_text": "Comprehensive Guide to Restaurants and Hotels in the South of France \nIntroduction \nThe South of France, known for its stunning landscapes, rich cultural heritage, and exquisite \ncuisine, is a dream destination for travelers. From the glamorous beaches of the French \nRiviera to the charming villages of Provence, this region o\ufb00ers a diverse array of experiences. \nWhether you're looking for budget-friendly options, family-friendly spots, upscale dining, or \nluxurious experiences, this guide will help you find the perfect restaurants and hotels for your \ntrip.",
+      "page_number": 1
+    },
+    {
+      "document": "South of France - Things to Do.pdf",
+      "refined_text": "Family-Friendly Activities \nThe South of France o\ufb00ers a variety of activities that are perfect for families with children: \nTheme Parks and Attractions \n\u2022 \nAntibes: Visit Marineland for marine shows and an aquarium. \n\u2022 \nFr\u00e9jus: Cool o\ufb00 at Aqualand water park. \n\u2022 \nVilleneuve-Loubet: Enjoy quirky attractions at Le Village des Fous. \n\u2022 \nMonteux: Spend a day at Parc Spirou, a theme park based on the famous comic book \ncharacter. \n\u2022 \nLa Palmyre: Explore the La Palmyre Zoo, home to a wide variety of animals. \n\u2022 \nCap d'Agde: Have fun at Luna Park, an amusement park with rides and games. \n\u2022 \nToulouse: Visit the Cit\u00e9 de l'Espace, a space-themed science museum with interactive \nexhibits. \nOutdoor Adventures \n\u2022 \nVerdon Gorge: Take a family hike or rent paddle boats to explore the stunning Verdon \nGorge. \n\u2022 \nCamargue Natural Park: Explore wetlands with wild horses and flamingos, and enjoy \nhorseback riding, bird watching, and boat tours. \n\u2022 \nVarious Locations: Try tree-top adventure parks with zip",
+      "page_number": 9
+    },
+    {
+      "document": "South of France - Tips and Tricks.pdf",
+      "refined_text": "The Ultimate South of France Travel Companion: Your Comprehensive Guide to Packing, \nPlanning, and Exploring \nIntroduction \nPlanning a trip to the South of France requires thoughtful preparation to ensure a \ncomfortable and enjoyable experience. This guide covers everything from packing essentials \nto travel tips, catering to all seasons and various activities. Whether you're traveling solo, with \nkids, or in a group, this guide will help you make the most of your trip.",
+      "page_number": 1
+    },
+    {
+      "document": "South of France - Traditions and Culture.pdf",
+      "refined_text": "A Comprehensive Guide to Traditions and Culture in the South of France \nIntroduction \nThe South of France, with its picturesque landscapes, charming villages, and vibrant cities, is \nnot only a feast for the eyes but also a treasure trove of cultural traditions and heritage. This \nregion, known for its rich history and diverse influences, o\ufb00ers a unique blend of customs, \nfestivals, and local practices that reflect its distinct identity. This guide will take you through \nthe various traditions and cultural aspects of the South of France, providing a deep \nunderstanding of what makes this region so special.",
+      "page_number": 1
+    }
+  ]
+}
