@@ -1,93 +1,92 @@
-# Challenge 1b: Multi-Collection PDF Analysis
+# 🔍 Challenge 1b: Multi-Collection PDF Analysis
 
-## Overview
-Advanced PDF analysis solution that processes multiple document collections and extracts relevant content based on specific personas and use cases.
+## 🧠 Problem Statement
 
-## Project Structure
-```
+Develop a PDF processing pipeline that takes multiple document collections, analyzes them based on specific personas and task requirements, and outputs structured JSON data identifying the most relevant sections and content for each use case.
+
+---
+
+## 🚀 Solution Overview
+
+This project automates PDF content extraction across multiple collections by:
+
+1. Reading structured input JSONs describing the persona and job-to-be-done.
+2. Parsing PDF files and extracting meaningful content.
+3. Scoring and ranking sections by relevance.
+4. Generating a consistent, schema-compliant output JSON per collection.
+
+---
+
+## 📁 Folder Structure
+
 Challenge_1b/
-├── Collection 1/                    # Travel Planning
-│   ├── PDFs/                       # South of France guides
-│   ├── challenge1b_input.json      # Input configuration
-│   └── challenge1b_output.json     # Analysis results
-├── Collection 2/                    # Adobe Acrobat Learning
-│   ├── PDFs/                       # Acrobat tutorials
-│   ├── challenge1b_input.json      # Input configuration
-│   └── challenge1b_output.json     # Analysis results
-├── Collection 3/                    # Recipe Collection
-│   ├── PDFs/                       # Cooking guides
-│   ├── challenge1b_input.json      # Input configuration
-│   └── challenge1b_output.json     # Analysis results
+├── Collection 1/
+│ ├── PDFs/
+│ ├── challenge1b_input.json
+│ └── challenge1b_output.json
+├── Collection 2/
+│ ├── PDFs/
+│ ├── challenge1b_input.json
+│ └── challenge1b_output.json
+├── Collection 3/
+│ ├── PDFs/
+│ ├── challenge1b_input.json
+│ └── challenge1b_output.json
+├── output/ # Contains final merged output
+│ └── challenge2b.json
+├── process.py # Main script to run
 └── README.md
-```
 
-## Collections
+---
 
-### Collection 1: Travel Planning
-- **Challenge ID**: round_1b_002
-- **Persona**: Travel Planner
-- **Task**: Plan a 4-day trip for 10 college friends to South of France
-- **Documents**: 7 travel guides
+## 📥 Input Format (challenge1b_input.json)
 
-### Collection 2: Adobe Acrobat Learning
-- **Challenge ID**: round_1b_003
-- **Persona**: HR Professional
-- **Task**: Create and manage fillable forms for onboarding and compliance
-- **Documents**: 15 Acrobat guides
-
-### Collection 3: Recipe Collection
-- **Challenge ID**: round_1b_001
-- **Persona**: Food Contractor
-- **Task**: Prepare vegetarian buffet-style dinner menu for corporate gathering
-- **Documents**: 9 cooking guides
-
-## Input/Output Format
-
-### Input JSON Structure
 ```json
 {
   "challenge_info": {
-    "challenge_id": "round_1b_XXX",
-    "test_case_name": "specific_test_case"
+    "challenge_id": "round_1b_001",
+    "test_case_name": "recipe_case"
   },
-  "documents": [{"filename": "doc.pdf", "title": "Title"}],
-  "persona": {"role": "User Persona"},
-  "job_to_be_done": {"task": "Use case description"}
+  "documents": [
+    { "filename": "sample.pdf", "title": "Vegetarian Recipes" }
+  ],
+  "persona": { "role": "Food Contractor" },
+  "job_to_be_done": { "task": "Prepare vegetarian buffet-style dinner menu for corporate gathering" }
 }
-```
-
-### Output JSON Structure
-```json
 {
   "metadata": {
-    "input_documents": ["list"],
-    "persona": "User Persona",
-    "job_to_be_done": "Task description"
+    "input_documents": ["sample.pdf"],
+    "persona": "Food Contractor",
+    "job_to_be_done": "Prepare vegetarian buffet-style dinner menu for corporate gathering"
   },
   "extracted_sections": [
     {
-      "document": "source.pdf",
-      "section_title": "Title",
+      "document": "sample.pdf",
+      "section_title": "Main Course Ideas",
       "importance_rank": 1,
-      "page_number": 1
+      "page_number": 3
     }
   ],
   "subsection_analysis": [
     {
-      "document": "source.pdf",
-      "refined_text": "Content",
-      "page_number": 1
+      "document": "sample.pdf",
+      "refined_text": "Paneer butter masala, stuffed capsicum, dal makhani...",
+      "page_number": 3
     }
   ]
 }
-```
 
-## Key Features
-- Persona-based content analysis
-- Importance ranking of extracted sections
-- Multi-collection document processing
-- Structured JSON output with metadata
+## 🧑‍💼 Key Features
 
----
+- 🧠 **Persona-Aware Parsing**: Uses the role and task for targeted content extraction.
+- 🗂 **Multi-Collection Handling**: Independently processes each folder (collection).
+- 📈 **Section Ranking**: Prioritizes sections using keyword/task relevance scoring.
+- ⚙️ **Configurable Pipeline**: Easily scalable and adaptable to different personas or document types.
 
-**Note**: This README provides a brief overview of the Challenge 1b solution structure based on available sample data. 
+## 🛠 How to Run
+
+Install dependencies:
+
+```bash
+pip install pdfplumber
+python process.py
